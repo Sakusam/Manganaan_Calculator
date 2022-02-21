@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTxt2ndVar"
+        android:id="@+id/secondinput"
         android:layout_width="201dp"
         android:layout_height="54dp"
         android:layout_marginTop="12dp"
@@ -21,7 +21,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTxt1stVar"
+        android:id="@+id/firstinput"
         android:layout_width="201dp"
         android:layout_height="54dp"
         android:layout_marginTop="20dp"
@@ -39,11 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="The Answer is "
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/output"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/division" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,63 +57,63 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/division"
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
         android:text="/"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintEnd_toStartOf="@+id/multiplication"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt2ndVar"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/secondinput"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/minus"
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintBottom_toBottomOf="@+id/division"
+        app:layout_constraintEnd_toStartOf="@+id/division"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintStart_toEndOf="@+id/addition"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/multiplication"
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:text="x"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintBottom_toBottomOf="@+id/division"
+        app:layout_constraintEnd_toStartOf="@+id/percentage"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/division"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/addition"
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/button7"
-        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintBottom_toBottomOf="@+id/minus"
+        app:layout_constraintEnd_toStartOf="@+id/minus"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt2ndVar"
+        app:layout_constraintTop_toBottomOf="@+id/secondinput"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/percentage"
         android:layout_width="56dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
         android:text="%"
-        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplication"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt2ndVar"
+        app:layout_constraintStart_toEndOf="@+id/multiplication"
+        app:layout_constraintTop_toBottomOf="@+id/secondinput"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
@@ -122,13 +122,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Second Variable"
-        app:layout_constraintEnd_toEndOf="@+id/editTxt1stVar"
+        app:layout_constraintEnd_toEndOf="@+id/firstinput"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/editTxt1stVar"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt1stVar" />
+        app:layout_constraintStart_toStartOf="@+id/firstinput"
+        app:layout_constraintTop_toBottomOf="@+id/firstinput" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Answer"
